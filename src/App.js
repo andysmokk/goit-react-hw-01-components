@@ -1,16 +1,25 @@
 // import './App.css';
-import Profile from './components/Profile';
-import user from './user.json';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
+import user from './components/Profile/user.json';
+import statisticalData from './components/Statistics/statistical-data.json';
+import friends from './components/FriendList/friends.json';
 
 function App() {
   return (
-    <Profile
-      avatarUrl={user.avatar}
-      userName={user.name}
-      tag={user.tag}
-      location={user.location}
-      stats={user.stats}
-    />
+    <div>
+      <Profile
+        userAvatarUrl={user.avatar}
+        userName={user.name}
+        userTag={user.tag}
+        userLocation={user.location}
+        userStats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={statisticalData} />
+      <Statistics stats={statisticalData} />
+      <FriendList friends={friends} />
+    </div>
   );
 }
 
