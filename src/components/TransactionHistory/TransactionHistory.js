@@ -4,28 +4,30 @@ import TransactionHistoryItem from './TransactionHistoryItem';
 function TransactionHistory({ items }) {
   console.log(items);
   return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <section>
+      <table className="transaction-history">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
+          </tr>
+        </thead>
 
-      <tbody>
-        {items.map(item => (
-          <TransactionHistoryItem
-            item={item}
-            key={item.id}
-            typeItem={item.type}
-            amountItem={item.amount}
-            currencyItem={item.currency}
-            idItem={item.id}
-          />
-        ))}
-      </tbody>
-    </table>
+        <tbody>
+          {items.map(item => (
+            <TransactionHistoryItem
+              item={item}
+              key={item.id}
+              typeItem={item.type}
+              amountItem={item.amount}
+              currencyItem={item.currency}
+              idItem={item.id}
+            />
+          ))}
+        </tbody>
+      </table>
+    </section>
   );
 }
 

@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
@@ -10,7 +10,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Profile
         userAvatarUrl={user.avatar}
         userName={user.name}
