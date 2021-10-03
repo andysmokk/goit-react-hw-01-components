@@ -1,5 +1,3 @@
-import s from './TransactionHistory.module.css';
-
 function TransactionHistoryItem({ item }) {
   const { type, amount, currency } = item;
   return (
