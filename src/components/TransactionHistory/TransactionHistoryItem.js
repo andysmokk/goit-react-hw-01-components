@@ -1,5 +1,6 @@
+import s from './TransactionHistory.module.css';
+
 function TransactionHistoryItem({ item }) {
-  //   console.log(item);
   const { type, amount, currency } = item;
   return (
     <tr>
