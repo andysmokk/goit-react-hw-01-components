@@ -37,6 +37,10 @@ function Profile({
   );
 }
 
+Profile.defaultProps = {
+  userLocation: 'Planet Earth',
+};
+
 Profile.propTypes = {
   userAvatarUrl: PropTypes.string.isRequired,
   userName: PropTypes.string.isRequired,

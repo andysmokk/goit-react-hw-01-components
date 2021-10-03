@@ -3,7 +3,6 @@ import TransactionHistoryItem from './TransactionHistoryItem';
 import s from './TransactionHistory.module.css';
 
 function TransactionHistory({ items }) {
-  console.log(items);
   return (
     <section className={s.TransactionHistory}>
       <table>
